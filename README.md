@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# synalogik-technical-test
-=======
 # text-analysis-API
 
 # API Documentation
