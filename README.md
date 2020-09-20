@@ -1,16 +1,16 @@
 # text-analysis-API
 
-#API Documentation
+# API Documentation
 
-#Table of Contents
-##Overview	1
-##Definition of a word	1
-##How to install and run text-analysis-API	1
-##Format of JSON Output	8
-##Entering a Text Sample	10
-##Running Unit Tests	12
+# Table of Contents
+## Overview	1
+## Definition of a word	1
+## How to install and run text-analysis-API	1
+## Format of JSON Output	8
+## Entering a Text Sample	10
+## Running Unit Tests	12
 
-##Overview
+## Overview
 
 text-analysis-API is a Spring Boot REST API which can perform statistical analysis of text samples to extract data about word count and word length including the frequencies of occurring word length values. This API uses Spring to implement a 3 tier architecture with a REST layer, service layer and data layer. The data layer contains a pre-loaded text sample which is analysed in the service layer to extract word count and word length data. This information is then sent to the controller in the REST layer which responds to a GET request by sending a customised JSON object containing data about word count, word lengths and their frequencies. The API is versatile and makes no assumptions about how the end user wishes to view or use the information contained in the JSON packets.
 
@@ -66,7 +66,7 @@ Postman
 
 
 
-##Format of JSON Output
+## Format of JSON Output
 
 The  text-analysis-API outputs word count and length data in the form of a single JSON packet containing 4 key-value pairs. These are:
 wordcount – integer which counts the total number of words in the text sample
@@ -75,7 +75,7 @@ modalWordLength – integer array which computes the modal average word length (
 wordLengthFrequency – JSON object array which contains all word length values and the respective frequencies with which they occur. Each JSON object contains two keys, wordLength, whose value is the integer length of a word or words, and frequency, which measures how many words have that word length value.
 
 
-##Entering a Text Sample
+## Entering a Text Sample
 In this section, we will see how to input text samples into the API. For this tutorial, I will use Genesis: Chapter 1 from the King James Bible For consistency, all text samples are placed in a file called “sample” which is in the folder  src\main\resources\text.
 
 1. Locate the sample file in the Package Explorer and double-click to display in the main window.
